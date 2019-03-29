@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>idea for d</title>
+    <link media="all" type="text/css" rel="stylesheet" href="//ding.uq0.com/assets/libs/d/d.min.css">
+</head>
+<body>
+<div class="d-container">
+    <div class="d-row">
+        <div class="d-box d-box-8">
+            <div class="d-card">
+                <div class="d-card-tools">
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe728;</i></a>
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe6e9;</i></a>
+                </div>
+                <div class="d-tab">
+                    <ul class="d-tab-title">
+                        <li class="active" data-target=".top-search">今日热搜</li>
+                        <li data-target=".top-access">top访问</li>
+                    </ul>
+                    <div class="d-card-body d-show top-search">
+                        <div class="d-row">
+                            <label class="d-input-inline">
+                                搜索：
+                                <input type="text">
+                            </label>
+                            <button type="button" class="d-btn">查询</button>
+                            <button type="button" class="d-btn d-btn-primary d-btn-lg">primary</button>
+                            <button type="button" class="d-btn d-btn-success">success</button>
+                            <button type="button" class="d-btn d-btn-warn d-btn-sm">warn</button>
+                            <button type="button" class="d-btn d-btn-danger d-btn-xs">danger</button>
+                            <button type="button" class="d-btn d-btn-danger" disabled>disabled</button>
+                        </div>
+                        <table class="d-table d-table-hover">
+                            <colgroup>
+                                <col width="120">
+                                <col width="130">
+                                <col width="120">
+                                <col>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>标题</th>
+                                <th>描述</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>这是一个标题</td>
+                                <td>这是一个描述</td>
+                                <td>2019-03-26</td>
+                                <td>这是一大段描述。。。。。。。。。。。这是一大段描述。。。。。。。。。。。</td>
+                            </tr>
+                            <tr>
+                                <td>这是一个标题</td>
+                                <td>这是一个描述</td>
+                                <td>2019-03-26</td>
+                                <td>这是一大段描述。。。。。。。。。。。这是一大段描述。。。。。。。。。。。</td>
+                            </tr>
+                            <tr>
+                                <td>这是一个标题</td>
+                                <td>这是一个描述</td>
+                                <td>2019-03-26</td>
+                                <td>这是一大段描述。。。。。。。。。。。这是一大段描述。。。。。。。。。。。</td>
+                            </tr>
+                            <tr>
+                                <td>这是一个标题</td>
+                                <td>这是一个描述</td>
+                                <td>2019-03-26</td>
+                                <td>这是一大段描述。。。。。。。。。。。这是一大段描述。。。。。。。。。。。</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-card-body top-access">
+                        top访问emmmmmmmmm~~~~~
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-tools">
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe728;</i></a>
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe6e9;</i></a>
+                </div>
+                <div class="d-card-header d-div-overflow">
+                    表单demo
+                </div>
+                <div class="d-card-body">
+                    <form action="">
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <label class="d-form-label">input框</label>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <input type="text" name="bb" value="">
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">textarea框</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <textarea name="sss"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">select框</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <select name="a">
+                                    <option value="">请选择</option>
+                                    <option value="1">111</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">d radio</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <label class="d-input-inline">
+                                    <input type="radio" name="radio_bbb" value="钢铁侠"> 钢铁侠
+                                </label>
+                                <label class="d-input-inline">
+                                    <input type="radio" name="radio_bbb" checked value="蜘蛛侠"> 蜘蛛侠
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">d checkbox</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <label class="d-input-inline">
+                                    <input type="checkbox" name="checkbox_bbb" value="钢铁侠" placeholder="钢铁侠">
+                                </label>
+                                <label class="d-input-inline">
+                                    <input type="checkbox" name="checkbox_bbb" checked value="蜘蛛侠"> 蜘蛛侠
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-12">
+            <div class="d-card">
+                <div class="d-card-tools">
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe728;</i></a>
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe6e9;</i></a>
+                </div>
+                <div class="d-card-header d-div-overflow">
+                    活动平台整体概况
+                </div>
+                <div class="d-card-body">
+                    d-card-content
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-tools">
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe728;</i></a>
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe6e9;</i></a>
+                </div>
+                <div class="d-card-header d-div-overflow">
+                    新API网关调用
+                </div>
+                <div class="d-card-body">
+                    d-card-content <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                    这里就是用来展示你实力的舞台 <br>
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-tools">
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe728;</i></a>
+                    <a href="javascript:void(0)"><i class="iconfont">&#xe6e9;</i></a>
+                </div>
+                <div class="d-card-header d-div-overflow">
+                    大转盘
+                </div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">签到</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">摇一摇</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">微信墙</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">经销商平台</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">答题平台</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">自动回复</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+        <div class="d-box d-box-4">
+            <div class="d-card">
+                <div class="d-card-header d-div-overflow">二维码管理</div>
+                <div class="d-card-body">
+                    这里就是用来展示你实力的舞台
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
