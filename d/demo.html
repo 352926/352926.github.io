@@ -100,9 +100,9 @@
                             <div class="d-box d-box-9">
                                 <input type="text" name="bb" value="">
                                 <div class="d-input-group">
-                                    <input type="text" placeholder="请选择" readonly value="">
+                                    <input type="text" placeholder="地址" value="">
                                     <span class="d-input-group-addon">
-                                        <i class="iconfont">&#xe843;</i>
+                                        <i class="iconfont">&#xe7af;</i>
                                     </span>
                                 </div>
                             </div>
@@ -120,18 +120,18 @@
                                 <div class="d-form-label">select框</div>
                             </div>
                             <div class="d-box d-box-9">
-                                <label class="d-input-inline">
+                                <div class="d-input-inline">
                                     性别
-                                    <select name="select_default_sex">
+                                    <select name="select_default_sex" style="width: 80px">
                                         <option value="">请选择</option>
                                         <option value="男">男</option>
                                         <option value="女">女</option>
                                         <option value="人妖">人妖</option>
                                     </select>
-                                </label>
-                                <label class="d-input-inline">
+                                </div>
+                                <div class="d-input-inline">
                                     爱好
-                                    <select name="select_default_love">
+                                    <select name="select_default_love" style="width: 85px">
                                         <option value="">请选择</option>
                                         <optgroup label="美食">
                                             <option value="红烧肉">红烧肉？</option>
@@ -143,8 +143,57 @@
                                             <option value="天龙八部">天龙八部？</option>
                                         </optgroup>
                                     </select>
-
-                                </label>
+                                    <select name="select_default_love" style="width: 85px">
+                                        <option value="">请选择</option>
+                                        <optgroup label="美食">
+                                            <option value="红烧肉">红烧肉？</option>
+                                            <option value="鸡蛋">鸡蛋？</option>
+                                        </optgroup>
+                                        <optgroup label="电视">
+                                            <option value="笑傲江湖">笑傲江湖？</option>
+                                            <option value="鹿鼎记" selected>鹿鼎记？</option>
+                                            <option value="天龙八部">天龙八部？</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">d select</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <select name="select_aaa" d-search style="width: 110px">
+                                    <option value="">可搜索</option>
+                                    <option value="1">这是1</option>
+                                    <option value="2">这是2</option>
+                                    <option value="disabled" disabled>这是disabled</option>
+                                </select>
+                                <select name="select_bbb" style="width: 110px">
+                                    <option value="">请选择</option>
+                                    <optgroup label="喜欢的电影系列">
+                                        <option value="长江七号">长江七号</option>
+                                        <option value="喜剧之王">喜剧之王</option>
+                                        <option value="功夫" disabled>功夫</option>
+                                    </optgroup>
+                                    <optgroup label="喜欢的运动系列喜欢的运动">
+                                        <option value="足球">足球</option>
+                                        <option value="篮球" selected>篮球</option>
+                                        <option value="跑步">跑步</option>
+                                        <option value="游泳">游泳</option>
+                                        <option value="游泳a">游泳a</option>
+                                        <option value="游泳b">游泳b</option>
+                                        <option value="游泳c">游泳c</option>
+                                        <option value="游泳d">游泳d</option>
+                                        <option value="游泳e">游泳e</option>
+                                        <option value="游泳f">游泳f</option>
+                                        <option value="游泳g">游泳g</option>
+                                        <option value="游泳h">游泳h</option>
+                                        <option value="游泳i">游泳i</option>
+                                        <option value="游泳j">游泳j</option>
+                                    </optgroup>
+                                    <option value="disabled" disabled>这是disabled</option>
+                                </select>
                             </div>
                         </div>
                         <div class="d-form-item">
@@ -173,56 +222,6 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="d-form-item">
-                            <div class="d-box d-box-3">
-                                <div class="d-form-label">d select</div>
-                            </div>
-                            <div class="d-box d-box-9">
-                                <div class="d-form-select">
-                                    <div class="d-form-select-title d-input-group">
-                                        <input type="text" placeholder="请选择" readonly value="" style="width: 110px">
-                                        <span class="d-input-group-addon">
-                                            <i class="iconfont">&#xe843;</i>
-                                        </span>
-                                    </div>
-                                    <ul class="d-form-select-option">
-                                        <li class="active">被选中的项目</li>
-                                        <li>123</li>
-                                        <li class="disabled">这是disabled</li>
-                                        <li>就是这样的</li>
-                                    </ul>
-                                    <select name="select_aaa">
-                                        <option value="">请选择</option>
-                                        <option value="1">这是1</option>
-                                        <option value="2">这是2</option>
-                                        <option value="disabled" disabled>这是disabled</option>
-                                    </select>
-                                </div>
-                                <div class="d-form-select">
-                                    <div class="d-form-select-title d-input-group">
-                                        <input type="text" placeholder="请选择" readonly value="" style="width: 110px">
-                                        <span class="d-input-group-addon">
-                                            <i class="iconfont">&#xe843;</i>
-                                        </span>
-                                    </div>
-                                    <ul class="d-form-select-option d-form-select-group">
-                                        <li class="group">喜欢的电影系列</li>
-                                        <li>123</li>
-                                        <li class="group">喜欢的运动系列喜欢的运动</li>
-                                        <li class="active">就是这样的</li>
-                                        <li class="disabled">就是这样的</li>
-                                        <li>就是这样的</li>
-                                    </ul>
-                                    <select name="select_aaa">
-                                        <option value="">请选择</option>
-                                        <option value="1">这是1</option>
-                                        <option value="2">这是2</option>
-                                        <option value="disabled" disabled>这是disabled</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </form>
                 </div>
             </div>
@@ -337,7 +336,6 @@
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
     </div>
 </div>
 <script src="/assets/libs/jquery/jquery-1.10.2.min.js"></script>
