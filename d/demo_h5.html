@@ -35,15 +35,15 @@
                                         <option value="浙江省">浙江省</option>
                                         <option value="江苏省">江苏省</option>
                                     </select>
-                                    <select name="province" style="width: 81px">
+                                    <select name="city" style="width: 81px">
                                         <option value="">请选择</option>
-                                        <option value="浙江省">浙江省</option>
-                                        <option value="江苏省">江苏省</option>
+                                        <option value="杭州市">杭州市</option>
+                                        <option value="苏州市">苏州市</option>
                                     </select>
-                                    <select name="province" style="width: 81px">
+                                    <select name="area" style="width: 81px">
                                         <option value="">请选择</option>
-                                        <option value="浙江省">浙江省</option>
-                                        <option value="江苏省">江苏省</option>
+                                        <option value="江干区">江干区</option>
+                                        <option value="吴中区">吴中区</option>
                                     </select>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                 <div class="d-form-label">性别</div>
                             </div>
                             <div class="d-box d-box-9">
-                                <select name="select_default_sex">
+                                <select name="sex">
                                     <option value="">请选择</option>
                                     <option value="男">男</option>
                                     <option value="女">女</option>
@@ -163,8 +163,23 @@
 <script src="//cdn.bootcss.com/layer/3.1.0/layer.js"></script>
 <script>
     $(document).ready(function () {
+
         $('#btn1').on('click', function () {
-            layer.alert('提交成功');
+            var multi_value = [];
+            $('[name=checkbox_bbb]:checked').each(function () {
+                multi_value.push($(this).val());
+            });
+            var info = [
+                '姓名：' + $('[name=name]').val(),
+                '省市区：' + $('[name=province]').val() + ' ' + $('[name=city]').val() + ' ' + $('[name=area]').val() + ' ',
+                '详细地址：' + $('[name=address]').val(),
+                '个人简介：' + $('[name=desc]').val(),
+                '性别：' + $('[name=sex]').val(),
+                '下拉：' + $('[name=select_aaa]').val() + ' ' + $('[name=select_bbb]').val(),
+                '单选：' + $('[name=radio_bbb]:checked').val(),
+                '多选：' + multi_value.join(','),
+            ];
+            layer.alert(info.join('<br>'));
         });
     });
 </script>
