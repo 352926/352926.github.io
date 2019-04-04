@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>idea for d h5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="//ding.uq0.com/d/favicon.ico">
+    <link media="all" type="text/css" rel="stylesheet" href="//ding.uq0.com/assets/libs/normalize/normalize.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="/assets/libs/d/d.min.css">
+</head>
+<body style="background-color: #f2f2f2;">
+<div class="d-container">
+    <div class="d-row">
+        <div class="d-box d-box-12">
+            <div class="d-card">
+                <div class="d-card-header">这是一个h5页面</div>
+                <div class="d-card-body">
+                    <form action="">
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <label class="d-form-label">姓名</label>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <input type="text" name="name" value="">
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <label class="d-form-label">省市区</label>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <div class="d-input-inline">
+                                    <select name="province" style="width: 81px">
+                                        <option value="">请选择</option>
+                                        <option value="浙江省">浙江省</option>
+                                        <option value="江苏省">江苏省</option>
+                                    </select>
+                                    <select name="province" style="width: 81px">
+                                        <option value="">请选择</option>
+                                        <option value="浙江省">浙江省</option>
+                                        <option value="江苏省">江苏省</option>
+                                    </select>
+                                    <select name="province" style="width: 81px">
+                                        <option value="">请选择</option>
+                                        <option value="浙江省">浙江省</option>
+                                        <option value="江苏省">江苏省</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <label class="d-form-label">详细地址</label>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <div class="d-input-group">
+                                    <input type="text" name="address" placeholder="地址" value="">
+                                    <span class="d-input-group-addon">
+                                        <i class="iconfont">&#xe7af;</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">个人简介</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <textarea name="desc"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">性别</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <select name="select_default_sex">
+                                    <option value="">请选择</option>
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                    <option value="人妖">人妖</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">下拉</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <select name="select_aaa" d-search style="width: 110px">
+                                    <option value="">可搜索</option>
+                                    <option value="1">这是1</option>
+                                    <option value="2">这是2</option>
+                                    <option value="disabled" disabled>这是disabled</option>
+                                </select>
+                                <select name="select_bbb" style="width: 110px">
+                                    <option value="">请选择</option>
+                                    <optgroup label="喜欢的电影系列">
+                                        <option value="长江七号">长江七号</option>
+                                        <option value="喜剧之王">喜剧之王</option>
+                                        <option value="功夫" disabled>功夫</option>
+                                    </optgroup>
+                                    <optgroup label="喜欢的运动系列喜欢的运动">
+                                        <option value="足球">足球</option>
+                                        <option value="篮球" selected>篮球</option>
+                                        <option value="跑步">跑步</option>
+                                        <option value="游泳">游泳</option>
+                                        <option value="游泳a">游泳a</option>
+                                        <option value="游泳b">游泳b</option>
+                                        <option value="游泳c">游泳c</option>
+                                        <option value="游泳d">游泳d</option>
+                                        <option value="游泳e">游泳e</option>
+                                        <option value="游泳f">游泳f</option>
+                                        <option value="游泳g">游泳g</option>
+                                        <option value="游泳h">游泳h</option>
+                                        <option value="游泳i">游泳i</option>
+                                        <option value="游泳j">游泳j</option>
+                                    </optgroup>
+                                    <option value="disabled" disabled>这是disabled</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">单选</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <label class="d-input-inline">
+                                    <input type="radio" name="radio_bbb" value="钢铁侠"> 钢铁侠钢铁侠钢铁侠
+                                </label>
+                                <label class="d-input-inline">
+                                    <input type="radio" name="radio_bbb" checked value="蜘蛛侠"> 蜘蛛侠
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3">
+                                <div class="d-form-label">多选</div>
+                            </div>
+                            <div class="d-box d-box-9">
+                                <label class="d-input-inline">
+                                    <input type="checkbox" name="checkbox_bbb" value="钢铁侠" placeholder="钢铁侠">
+                                </label>
+                                <label class="d-input-inline">
+                                    <input type="checkbox" name="checkbox_bbb" checked value="蜘蛛侠"> 蜘蛛侠
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form-item">
+                            <div class="d-box d-box-3"></div>
+                            <div class="d-box d-box-9">
+                                <button type="button" id="btn1" class="d-btn d-btn-primary">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/libs/jquery/jquery-1.10.2.min.js"></script>
+<script src="/assets/libs/d/d.min.js"></script>
+<script src="//cdn.bootcss.com/layer/3.1.0/layer.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btn1').on('click', function () {
+            layer.alert('提交成功');
+        });
+    });
+</script>
+</body>
+</html>
