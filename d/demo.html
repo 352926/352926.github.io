@@ -33,16 +33,25 @@
                     </ul>
                     <div class="d-card-body d-show top-search">
                         <div class="d-row">
-                            <label class="d-input-inline">
-                                搜索：
-                                <input type="text">
-                            </label>
-                            <button type="button" class="d-btn">查询</button>
-                            <button type="button" class="d-btn d-btn-primary d-btn-lg">primary</button>
-                            <button type="button" class="d-btn d-btn-success">success</button>
-                            <button type="button" class="d-btn d-btn-warn d-btn-sm">warn</button>
-                            <button type="button" class="d-btn d-btn-danger d-btn-xs">danger</button>
-                            <button type="button" class="d-btn d-btn-danger" disabled>disabled</button>
+                            <div class="d-box d-box-7">
+                                <div class="d-input-inline">
+                                    搜索：
+                                    <input type="text" class="d-box-9">
+                                </div>
+                                <div class="d-input-inline">
+                                    搜索：
+                                    <input type="text" class="d-box-9">
+                                </div>
+                                <input type="text" class="d-box-9" value="s">
+                            </div>
+                            <div class="d-box d-box-5">
+                                <button type="button" class="d-btn">查询</button>
+                                <button type="button" class="d-btn d-btn-primary d-btn-lg">primary</button>
+                                <button type="button" class="d-btn d-btn-success">success</button>
+                                <button type="button" class="d-btn d-btn-warn d-btn-sm">warn</button>
+                                <button type="button" class="d-btn d-btn-danger d-btn-xs">danger</button>
+                                <button type="button" class="d-btn d-btn-danger" disabled>disabled</button>
+                            </div>
                         </div>
                         <table class="d-table d-table-hover">
                             <colgroup>
@@ -134,7 +143,7 @@
                                 <div class="d-input-inline">
                                     <select name="select_default_sex" class="d-box-4">
                                         <option value="">请选择</option>
-                                        <option value="男">男</option>
+                                        <option value="男" selected>男</option>
                                         <option value="女">女</option>
                                         <option value="人妖">人妖</option>
                                     </select>
@@ -170,37 +179,39 @@
                                 <div class="d-form-label">d select</div>
                             </div>
                             <div class="d-box d-box-9">
-                                <select name="select_aaa" d-search class="d-box-12">
-                                    <option value="">可搜索</option>
-                                    <option value="1">这是1</option>
-                                    <option value="2">这是2</option>
-                                    <option value="disabled" disabled>这是disabled</option>
-                                </select>
-                                <select name="select_bbb" class="d-box-6">
-                                    <option value="">请选择</option>
-                                    <optgroup label="喜欢的电影系列">
-                                        <option value="长江七号">长江七号</option>
-                                        <option value="喜剧之王">喜剧之王</option>
-                                        <option value="功夫" disabled>功夫</option>
-                                    </optgroup>
-                                    <optgroup label="喜欢的运动系列喜欢的运动">
-                                        <option value="足球">足球</option>
-                                        <option value="篮球" selected>篮球</option>
-                                        <option value="跑步">跑步</option>
-                                        <option value="游泳">游泳</option>
-                                        <option value="游泳a">游泳a</option>
-                                        <option value="游泳b">游泳b</option>
-                                        <option value="游泳c">游泳c</option>
-                                        <option value="游泳d">游泳d</option>
-                                        <option value="游泳e">游泳e</option>
-                                        <option value="游泳f">游泳f</option>
-                                        <option value="游泳g">游泳g</option>
-                                        <option value="游泳h">游泳h</option>
-                                        <option value="游泳i">游泳i</option>
-                                        <option value="游泳j">游泳j</option>
-                                    </optgroup>
-                                    <option value="disabled" disabled>这是disabled</option>
-                                </select>
+                                <div class="d-input-inline d-box-12">
+                                    <select name="select_aaa" d-search class="d-box-6">
+                                        <option value="">可搜索</option>
+                                        <option value="1">这是1</option>
+                                        <option value="2">这是2</option>
+                                        <option value="disabled" disabled>这是disabled</option>
+                                    </select>
+                                    <select name="select_bbb" class="d-box-6">
+                                        <option value="">请选择</option>
+                                        <optgroup label="喜欢的电影系列">
+                                            <option value="长江七号">长江七号</option>
+                                            <option value="喜剧之王">喜剧之王</option>
+                                            <option value="功夫" disabled>功夫</option>
+                                        </optgroup>
+                                        <optgroup label="喜欢的运动系列喜欢的运动">
+                                            <option value="足球">足球</option>
+                                            <option value="篮球" selected>篮球</option>
+                                            <option value="跑步">跑步</option>
+                                            <option value="游泳">游泳</option>
+                                            <option value="游泳a">游泳a</option>
+                                            <option value="游泳b">游泳b</option>
+                                            <option value="游泳c">游泳c</option>
+                                            <option value="游泳d">游泳d</option>
+                                            <option value="游泳e">游泳e</option>
+                                            <option value="游泳f">游泳f</option>
+                                            <option value="游泳g">游泳g</option>
+                                            <option value="游泳h">游泳h</option>
+                                            <option value="游泳i">游泳i</option>
+                                            <option value="游泳j">游泳j</option>
+                                        </optgroup>
+                                        <option value="disabled" disabled>这是disabled</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="d-form-item">
@@ -234,11 +245,9 @@
                                 <div class="d-form-label">inline text</div>
                             </div>
                             <div class="d-box d-box-9">
-                                <div class="d-input-inline d-box-6">
-                                    <input type="text" name="text_aaa" value="钢铁侠" placeholder="钢铁侠">
-                                </div>
-                                <div class="d-input-inline d-box-6">
-                                    <input type="text" name="text_bbb" checked value="蜘蛛侠">
+                                <div class="d-input-inline d-box-12">
+                                    <input type="text" name="text_aaa" class="d-box-6" value="钢铁侠" placeholder="钢铁侠">
+                                    <input type="text" name="text_bbb" class="d-box-6" checked value="蜘蛛侠">
                                 </div>
                             </div>
                         </div>
