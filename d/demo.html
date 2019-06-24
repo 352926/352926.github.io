@@ -34,15 +34,25 @@
                     <div class="d-card-body d-show top-search">
                         <div class="d-row">
                             <div class="d-box d-box-7">
-                                <div class="d-input-inline">
+                                <label class="d-input-inline">
                                     搜索：
                                     <input type="text" class="d-box-9">
-                                </div>
-                                <div class="d-input-inline">
+                                </label>
+                                <label class="d-input-inline">
                                     搜索：
                                     <input type="text" class="d-box-9">
+                                </label>
+                                <div class="d-input-inline">
+                                    <label for="level">级别：</label>
+                                    <select name="level" id="level" d-search>
+                                        <option value="">全部</option>
+                                        <option value="info" >INFO</option>
+                                        <option value="warn" >WARN</option>
+                                        <option value="notice" >NOTICE</option>
+                                        <option value="error" >ERROR</option>
+                                        <option value="debug" >DEBUG</option>
+                                    </select>
                                 </div>
-                                <input type="text" class="d-box-9" value="s">
                             </div>
                             <div class="d-box d-box-5">
                                 <button type="button" class="d-btn">查询</button>
